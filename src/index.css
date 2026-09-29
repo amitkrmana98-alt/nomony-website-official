@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0B0F17;
+    color: #F9FAFB;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+}
+
+/* Neubrutalist custom elements */
+.neu-border {
+  border: 2px solid #1F2937;
+}
+
+.neu-border-bright {
+  border: 2px solid #374151;
+}
+
+.neu-border-accent {
+  border: 2px solid #0EA5E9;
+}
+
+.neu-box {
+  border: 2px solid #1F2937;
+  box-shadow: 4px 4px 0px 0px #0EA5E9;
+}
+
+.neu-box-dark {
+  border: 2px solid #374151;
+  box-shadow: 4px 4px 0px 0px #111827;
+}
+
+.neu-button {
+  border: 2px solid #0EA5E9;
+  box-shadow: 3px 3px 0px 0px #0EA5E9;
+  transition: all 0.15s ease-in-out;
+}
+
+.neu-button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px 0px #0EA5E9;
+}
+
+.neu-button:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0px 0px #0EA5E9;
+}
+
+/* Custom scrollbars for docs & logs */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0F17;
+}
+::-webkit-scrollbar-thumb {
+  background: #1F2937;
+  border: 1px solid #374151;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0EA5E9;
+}
